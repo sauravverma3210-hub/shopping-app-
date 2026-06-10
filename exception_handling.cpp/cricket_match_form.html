@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SPL 2026 Registration</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .container {
+        background: rgba(255,255,255,0.08);
+        padding: 25px;
+        border-radius: 15px;
+        width: 90%;
+        max-width: 500px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #00ffcc;
+    }
+
+    label {
+        font-size: 14px;
+        margin-top: 10px;
+        display: block;
+    }
+
+    input, select, textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: none;
+        border-radius: 8px;
+        outline: none;
+    }
+
+    input:focus, select:focus, textarea:focus {
+        border: 2px solid #00ffcc;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        margin-top: 20px;
+        background: #00ffcc;
+        border: none;
+        border-radius: 8px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        background: #00c9a7;
+    }
+
+    .note {
+        font-size: 12px;
+        text-align: center;
+        margin-top: 10px;
+        color: #ddd;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>🏏 SPL 2026 Registration</h1>
+
+    <form onsubmit="return submitForm()">
+
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <label>Age</label>
+        <input type="number" placeholder="Enter your age" required>
+
+        <label>Gender</label>
+        <select required>
+            <option value="">Select</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+        </select>
+
+        <label>Role</label>
+        <select required>
+            <option value="">Select Role</option>
+            <option>Batsman</option>
+            <option>Bowler</option>
+            <option>All-Rounder</option>
+            <option>Wicket Keeper</option>
+        </select>
+
+        <label>Batting Style</label>
+        <select>
+            <option>Right Hand</option>
+            <option>Left Hand</option>
+        </select>
+
+        <label>Bowling Style</label>
+        <input type="text" placeholder="e.g. Right Arm Fast / Spin">
+
+        <label>Experience (Years)</label>
+        <input type="number">
+
+        <label>Contact Number</label>
+        <input type="tel" placeholder="Enter mobile number" required>
+
+        <label>Address</label>
+        <textarea rows="3" placeholder="Your address"></textarea>
+
+        <button type="submit">Register Now 🏏</button>
+
+        <div class="note">SPL 2026 - Cricket League Official Registration</div>
+    </form>
+</div>
+
+<script>
+function submitForm(){
+    alert("🏏 Registration Successful for SPL 2026!");
+    return false;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SPL 2026 - Cricket League</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#0b0f1a;
+    color:white;
+}
+
+/* NAVBAR */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 30px;
+    background:#0334ba;
+    position:sticky;
+    top:0;
+}
+
+nav h1{
+    color:#00ffcc;
+}
+
+nav ul{
+    display:flex;
+    gap:20px;
+    list-style:none;
+}
+
+nav ul li{
+    cursor:pointer;
+    transition:0.3s;
+}
+
+nav ul li:hover{
+    color:#00ffcc;
+}
+
+/* HERO */
+.hero{
+    height:90vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1540747913346-19e32dc3e97e') center/cover;
+}
+
+.hero h2{
+    font-size:50px;
+    color:#00ffcc;
+}
+
+.hero p{
+    margin-top:10px;
+    font-size:18px;
+}
+
+.btn{
+    margin-top:20px;
+    padding:12px 25px;
+    background:#00ffcc;
+    border:none;
+    cursor:pointer;
+    font-weight:bold;
+    border-radius:8px;
+}
+
+/* SECTION */
+section{
+    padding:60px 20px;
+    text-align:center;
+}
+
+h2.section-title{
+    margin-bottom:30px;
+    color:#00ffcc;
+}
+
+/* TEAMS */
+.teams{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#11182b;
+    padding:20px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.05);
+}
+
+/* SCHEDULE */
+table{
+    width:90%;
+    margin:auto;
+    border-collapse:collapse;
+}
+
+table, th, td{
+    border:1px solid #00ffcc;
+}
+
+th, td{
+    padding:12px;
+}
+
+/* FOOTER */
+footer{
+    padding:20px;
+    background:#11182b;
+    text-align:center;
+    margin-top:40px;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h1>🏏 SPL 2026</h1>
+    <ul>
+        <li>Home</li>
+        <li>Teams</li>
+        <li>Schedule</li>
+        <li>Points Table</li>
+        <li>Contact</li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+    <h2>SPL 2026 CRICKET LEAGUE</h2>
+    <p>Where Legends Are Made 🏆</p>
+    <button class="btn">Watch Live</button>
+</div>
+
+<!-- TEAMS -->
+<section>
+    <h2 class="section-title">🔥 Teams</h2>
+    <div class="teams">
+
+        <div class="card">RCB Warriors</div>
+        <div class="card">Mumbai Strikers</div>
+        <div class="card">Chennai Kings</div>
+        <div class="card">Punjab Tigers</div>
+        <div class="card">Kolkata Riders</div>
+        <div class="card">Rajasthan Royals</div>
+
+    </div>
+</section>
+
+<!-- SCHEDULE -->
+<section>
+    <h2 class="section-title">📅 Match Schedule</h2>
+
+    <table>
+        <tr>
+            <th>Date</th>
+            <th>Match</th>
+            <th>Venue</th>
+        </tr>
+
+        <tr>
+            <td>28 Mar</td>
+            <td>RCB vs SRH</td>
+            <td>Bangalore</td>
+        </tr>
+
+        <tr>
+            <td>29 Mar</td>
+            <td>MI vs KKR</td>
+            <td>Mumbai</td>
+        </tr>
+
+        <tr>
+            <td>30 Mar</td>
+            <td>CSK vs RR</td>
+            <td>Chennai</td>
+        </tr>
+
+        <tr>
+            <td>31 Mar</td>
+            <td>PBKS vs GT</td>
+            <td>Mohali</td>
+        </tr>
+    </table>
+</section>
+
+<!-- POINTS TABLE -->
+<section>
+    <h2 class="section-title">📊 Points Table</h2>
+
+    <table>
+        <tr>
+            <th>Team</th>
+            <th>Matches</th>
+            <th>Wins</th>
+            <th>Points</th>
+        </tr>
+
+        <tr>
+            <td>RCB</td>
+            <td>4</td>
+            <td>3</td>
+            <td>6</td>
+        </tr>
+
+        <tr>
+            <td>MI</td>
+            <td>4</td>
+            <td>2</td>
+            <td>4</td>
+        </tr>
+
+        <tr>
+            <td>CSK</td>
+            <td>4</td>
+            <td>3</td>
+            <td>6</td>
+        </tr>
+
+    </table>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>🏏 SPL 2026 Cricket League | Made for Fans</p>
+</footer>
+
+</body>
+</html>
